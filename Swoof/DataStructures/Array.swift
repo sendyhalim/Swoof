@@ -6,8 +6,6 @@
 //  Copyright © 2015 Sendy Halim. All rights reserved.
 //
 
-import Foundation
-
 ///  Fmap operator
 infix operator <^> { associativity left precedence 90 }
 
