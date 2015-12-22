@@ -16,8 +16,8 @@ public func <^> <A, B>(f: A -> B, value: [A]) -> [B] {
 ///  Apply operator
 infix operator <*> { associativity left precedence 90 }
 
-public func <*> <A, B>(fs: [A -> B], value: [A]) -> [[B]] {
-  return fs.map { $0 <^> value }
+public func <*> <A, B>(fs: [A -> B], value: [A]) -> [B] {
+  return fs.flatMap { $0 <^> value }
 }
 
 
