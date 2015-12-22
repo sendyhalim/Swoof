@@ -16,13 +16,13 @@ public func const <A, B>(value: A) -> B -> A {
   return { _ in value }
 }
 
-public func compose <A, B, C>(f: A -> B, _ g: B -> C) -> A -> C {
-  return { x in g(f(x)) }
+public func compose <A, B, C>(f: B -> C, _ g: A -> B) -> A -> C {
+  return { x in f(g(x)) }
 }
 
 infix operator • { associativity left precedence 50 }
 
-public func • <A, B, C>(f: A -> B, g: B -> C) -> A -> C {
+public func • <A, B, C>(f: B -> C, g: A -> B) -> A -> C {
   return compose(f, g)
 }
 
