@@ -21,6 +21,16 @@ class ArrayApplicativeSpec: QuickSpec {
           expect(pure(id) <*> value).to(equal(value))
         }
       }
+
+      context("Homomorphism law") {
+        it("should satisfy `pure f <*> pure x = pure (f x)`") {
+          let f = curry(+)(20)
+          let x = 80
+          let expected = pure(f(x))
+
+          expect(pure(f) <*> pure(x)).to(equal(expected))
+        }
+      }
     }
   }
 }
