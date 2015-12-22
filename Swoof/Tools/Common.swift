@@ -20,7 +20,7 @@ public func compose <A, B, C>(f: A -> B, _ g: B -> C) -> A -> C {
   return { x in g(f(x)) }
 }
 
-infix operator • { associativity left precedence 200 }
+infix operator • { associativity left precedence 50 }
 
 public func • <A, B, C>(f: A -> B, g: B -> C) -> A -> C {
   return compose(f, g)
