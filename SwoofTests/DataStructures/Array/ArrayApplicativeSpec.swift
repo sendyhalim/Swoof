@@ -31,6 +31,12 @@ class ArrayApplicativeSpec: QuickSpec {
           expect(pure(f) <*> pure(x)).to(equal(expected))
         }
       }
+
+      context("Composition law") {
+        it("should satisfy `u <*> (v <*> w) = pure (.) <*> u <*> v <*> w`") {
+          // TODO: implement arrow first
+        }
+      }
     }
   }
 }
