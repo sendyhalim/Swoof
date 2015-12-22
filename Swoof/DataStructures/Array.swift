@@ -20,6 +20,10 @@ public prefix func <^> <A, B>(f: A -> B) -> [A] -> [B] {
 }
 
 ///  Apply operator
+public func pure <A>(value: A) -> [A] {
+  return [value]
+}
+
 infix operator <*> { associativity left precedence 90 }
 
 public func <*> <A, B>(fs: [A -> B], value: [A]) -> [B] {
