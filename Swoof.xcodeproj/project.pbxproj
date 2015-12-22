@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		791D52421C29800600E36820 /* ArrayFunctorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791D52411C29800600E36820 /* ArrayFunctorSpec.swift */; };
+		791D52441C29803800E36820 /* ArrayApplicativeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791D52431C29803800E36820 /* ArrayApplicativeSpec.swift */; };
 		792AF4501C292B1000BFA9DF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792AF44F1C292B1000BFA9DF /* Common.swift */; };
 		79B6D6641C229CEE00DABBE2 /* Swoof.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B6D6631C229CEE00DABBE2 /* Swoof.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79B6D66B1C229CEE00DABBE2 /* Swoof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B6D6601C229CEE00DABBE2 /* Swoof.framework */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		791D52411C29800600E36820 /* ArrayFunctorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayFunctorSpec.swift; sourceTree = "<group>"; };
+		791D52431C29803800E36820 /* ArrayApplicativeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayApplicativeSpec.swift; sourceTree = "<group>"; };
 		792AF44F1C292B1000BFA9DF /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		79B6D6601C229CEE00DABBE2 /* Swoof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swoof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B6D6631C229CEE00DABBE2 /* Swoof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swoof.h; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				791D52411C29800600E36820 /* ArrayFunctorSpec.swift */,
+				791D52431C29803800E36820 /* ArrayApplicativeSpec.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				791D52421C29800600E36820 /* ArrayFunctorSpec.swift in Sources */,
+				791D52441C29803800E36820 /* ArrayApplicativeSpec.swift in Sources */,
 				79B6D6701C229CEE00DABBE2 /* SwoofTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
