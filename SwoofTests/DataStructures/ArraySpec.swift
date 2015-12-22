@@ -24,10 +24,10 @@ class ArraySpec: QuickSpec {
         let value = [8, 9, 11]
         let plusThree = curry(+)(3)
         let minusTen = curry(-)(10)
-        let composed = plusThree • minusTen
-        let expected = minusTen <^> (plusThree <^> value)
+        let expectedFn = <^>(plusThree) • <^>(minusTen)
+        let expected = expectedFn(value)
 
-        expect(composed <^> value).to(equal(expected))
+        expect((plusThree • minusTen) <^> value).to(equal(expected))
       }
     }
 
