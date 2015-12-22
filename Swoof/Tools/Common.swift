@@ -25,3 +25,9 @@ infix operator • { associativity left precedence 50 }
 public func • <A, B, C>(f: A -> B, g: B -> C) -> A -> C {
   return compose(f, g)
 }
+
+infix operator <| { associativity left precedence 150 }
+
+public func <| <A, B>(f: A -> B, value: A) -> B {
+  return f(value)
+}
