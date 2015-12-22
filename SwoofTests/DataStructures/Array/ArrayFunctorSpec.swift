@@ -10,7 +10,7 @@ import Swoof
 import Nimble
 import Quick
 
-class ArraySpec: QuickSpec {
+class ArrayFunctorSpec: QuickSpec {
   override func spec() {
     describe("Functor laws") {
       it("should satisfy functor law `fmap id = id`") {

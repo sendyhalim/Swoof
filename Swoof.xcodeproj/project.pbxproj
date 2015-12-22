@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791D52421C29800600E36820 /* ArrayFunctorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791D52411C29800600E36820 /* ArrayFunctorSpec.swift */; };
 		792AF4501C292B1000BFA9DF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792AF44F1C292B1000BFA9DF /* Common.swift */; };
 		79B6D6641C229CEE00DABBE2 /* Swoof.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B6D6631C229CEE00DABBE2 /* Swoof.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79B6D66B1C229CEE00DABBE2 /* Swoof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B6D6601C229CEE00DABBE2 /* Swoof.framework */; };
@@ -14,7 +15,6 @@
 		79B6D68A1C22A67400DABBE2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B6D6881C22A67400DABBE2 /* Nimble.framework */; };
 		79B6D68B1C22A67400DABBE2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B6D6891C22A67400DABBE2 /* Quick.framework */; };
 		79B6D68E1C22A6B000DABBE2 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B6D68D1C22A6B000DABBE2 /* Array.swift */; };
-		79B6D6911C22A6F500DABBE2 /* ArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B6D6901C22A6F500DABBE2 /* ArraySpec.swift */; };
 		79BBBB0F1C23296A00B2B2C3 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BBBB0E1C23296A00B2B2C3 /* Curry.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		791D52411C29800600E36820 /* ArrayFunctorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayFunctorSpec.swift; sourceTree = "<group>"; };
 		792AF44F1C292B1000BFA9DF /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		79B6D6601C229CEE00DABBE2 /* Swoof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swoof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B6D6631C229CEE00DABBE2 /* Swoof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swoof.h; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 		79B6D6881C22A67400DABBE2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		79B6D6891C22A67400DABBE2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		79B6D68D1C22A6B000DABBE2 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		79B6D6901C22A6F500DABBE2 /* ArraySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArraySpec.swift; sourceTree = "<group>"; };
 		79BBBB0E1C23296A00B2B2C3 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		791D523E1C297FE700E36820 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				791D52411C29800600E36820 /* ArrayFunctorSpec.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
 		79B6D6561C229CEE00DABBE2 = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +125,7 @@
 		79B6D68F1C22A6D000DABBE2 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
-				79B6D6901C22A6F500DABBE2 /* ArraySpec.swift */,
+				791D523E1C297FE700E36820 /* Array */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -270,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79B6D6911C22A6F500DABBE2 /* ArraySpec.swift in Sources */,
+				791D52421C29800600E36820 /* ArrayFunctorSpec.swift in Sources */,
 				79B6D6701C229CEE00DABBE2 /* SwoofTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
