@@ -8,10 +8,10 @@
 
 import Foundation
 
-func id <A>(value: A) -> A {
+public func id <A>(value: A) -> A {
   return value
 }
 
-func const <A, B>(value: A) -> B -> A {
+public func const <A, B>(value: A) -> B -> A {
   return { _ in value }
 }
