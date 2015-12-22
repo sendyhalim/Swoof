@@ -13,6 +13,12 @@ public func <^> <A, B>(f: A -> B, value: [A]) -> [B] {
   return value.map(f)
 }
 
+prefix operator <^> {}
+
+public prefix func <^> <A, B>(f: A -> B) -> [A] -> [B] {
+  return curry(<^>)(f)
+}
+
 ///  Apply operator
 infix operator <*> { associativity left precedence 90 }
 
