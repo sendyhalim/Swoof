@@ -24,10 +24,10 @@ class ArrayFunctorSpec: QuickSpec {
         let value = [8, 9, 11]
         let plusThree = curry(+)(3)
         let minusTen = curry(-)(10)
-        let expectedFn = <^>(plusThree) • <^>(minusTen)
+        let expectedFn = (<^>(plusThree)) • (<^>(minusTen))
         let expected = expectedFn(value)
 
-        expect((plusThree • minusTen) <^> value).to(equal(expected))
+        expect(plusThree • minusTen <^> value).to(equal(expected))
       }
     }
 
