@@ -16,15 +16,16 @@ class ArrayFunctorSpec: QuickSpec {
       it("should satisfy functor law `fmap id = id`") {
         let value = [8, 9, 11]
         let idValue = id(value)
+        let result: [Int] = id <^> value
 
-        expect(id <^> value).to(equal(idValue))
+        expect(result).to(equal(idValue))
       }
 
       it("should satisfy functor law `fmap (p . q) = (fmap p) . (fmap q)`") {
         let value = [8, 9, 11]
         let plusThree = curry(+)(3)
         let minusTen = curry(-)(10)
-        let expectedFn = (<^>(plusThree)) • (<^>(minusTen))
+        let expectedFn: [Int] -> [Int] = (<^>(plusThree)) • (<^>(minusTen))
         let expected = expectedFn(value)
 
         expect(plusThree • minusTen <^> value).to(equal(expected))
