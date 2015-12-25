@@ -5,7 +5,7 @@ Swoof is a swift library that implements operator aliases
 | Function        | Operator   | Signature                     |
 | --------------- | ---------- | ----------------------------- |
 | `fmap`          | `<^>`      | `(A -> B) -> F<A> -> F<B>`    |
-| `apply`         | `<*>`      | `F<A -> B> -> F<A> -> F<B>`   |
+| `ap`            | `<*>`      | `F<A -> B> -> F<A> -> F<B>`   |
 | `bind`          | `>>=`      | `F<A> -> (A -> F<B>) -> F<B>` |
 | `mappend`       | `<>`       | `M<A> -> M<A> -> M<A>`        |
 | `alternative`   | `<|>`      | `F<A> -> F<A> -> F<A>`        |
