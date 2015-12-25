@@ -1,0 +1,11 @@
+disabled_rules:
+  - variable_name
+  - force_cast
+included:
+  - Swoof
+  - SwoofTests
+excluded: # paths to ignore during linting. overridden by `included`.
+  - Carthage
+  - Pods
+  - R.generated.swift
+
