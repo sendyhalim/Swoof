@@ -21,17 +21,16 @@ public prefix func <^> <A, B>(f: A -> B) -> A? -> B? {
   return curry(<^>)(f)
 }
 
-///  Apply operator
-public func pure <A>(value: A) -> A? {
-  return .Some(value)
-}
-
+// Ap operator
 infix operator <*> { associativity left precedence 90 }
 
 public func <*> <A, B>(fs: (A -> B)?, value: A?) -> B? {
   return fs.flatMap { $0 <^> value }
 }
 
+public func pure <A>(value: A) -> A? {
+  return .Some(value)
+}
 
 /// Bind operator
 infix operator >>= { associativity left precedence 90 }
