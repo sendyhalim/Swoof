@@ -13,7 +13,6 @@
 		796307281C2D09B00078DC03 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796307271C2D09B00078DC03 /* Optional.swift */; };
 		79B6D6641C229CEE00DABBE2 /* Swoof.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B6D6631C229CEE00DABBE2 /* Swoof.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79B6D66B1C229CEE00DABBE2 /* Swoof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B6D6601C229CEE00DABBE2 /* Swoof.framework */; };
-		79B6D6701C229CEE00DABBE2 /* SwoofTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B6D66F1C229CEE00DABBE2 /* SwoofTests.swift */; };
 		79B6D68A1C22A67400DABBE2 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B6D6881C22A67400DABBE2 /* Nimble.framework */; };
 		79B6D68B1C22A67400DABBE2 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B6D6891C22A67400DABBE2 /* Quick.framework */; };
 		79B6D68E1C22A6B000DABBE2 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B6D68D1C22A6B000DABBE2 /* Array.swift */; };
@@ -39,7 +38,6 @@
 		79B6D6631C229CEE00DABBE2 /* Swoof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swoof.h; sourceTree = "<group>"; };
 		79B6D6651C229CEE00DABBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B6D66A1C229CEE00DABBE2 /* SwoofTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwoofTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		79B6D66F1C229CEE00DABBE2 /* SwoofTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwoofTests.swift; sourceTree = "<group>"; };
 		79B6D6711C229CEE00DABBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79B6D6881C22A67400DABBE2 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		79B6D6891C22A67400DABBE2 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				79B6D68F1C22A6D000DABBE2 /* DataStructures */,
-				79B6D66F1C229CEE00DABBE2 /* SwoofTests.swift */,
 				79B6D6711C229CEE00DABBE2 /* Info.plist */,
 			);
 			path = SwoofTests;
@@ -301,7 +298,6 @@
 			files = (
 				791D52421C29800600E36820 /* ArrayFunctorSpec.swift in Sources */,
 				791D52441C29803800E36820 /* ArrayApplicativeSpec.swift in Sources */,
-				79B6D6701C229CEE00DABBE2 /* SwoofTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
