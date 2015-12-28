@@ -38,3 +38,20 @@ infix operator >>= { associativity left precedence 90 }
 public func >>= <A, B>(value: A?, f: A -> B?) -> B? {
   return value.flatMap(f)
 }
+
+public func mappend<Wrapped: Monoid>(
+  a: Optional<Wrapped>,
+  _ b: Optional<Wrapped>
+) -> Optional<Wrapped> {
+  return a.flatMap { x in
+    return b.flatMap { y in
+      x <> y
+    }
+  }
+}
+
+infix operator <> { associativity left precedence 90 }
+
+public func <> <Wrapped: Monoid>(a: Optional<Wrapped>, b: Optional<Wrapped>) -> Optional<Wrapped> {
+  return mappend(a, b)
+}

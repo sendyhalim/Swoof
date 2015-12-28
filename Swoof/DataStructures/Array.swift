@@ -36,3 +36,13 @@ infix operator >>= { associativity left precedence 90 }
 public func >>= <A, B>(value: [A], f: A -> [B]) -> [B] {
   return value.flatMap(f)
 }
+
+extension Array: Monoid {
+  public func mempty() -> Array<Element> {
+    return []
+  }
+
+  public func mappend(m: Array<Element>) -> Array<Element> {
+    return self + m
+  }
+}

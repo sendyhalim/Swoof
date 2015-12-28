@@ -8,9 +8,13 @@
 
 import Foundation
 
-protocol Monoid {
-  typealias Element
+public protocol Monoid {
+  func mempty() -> Self
+  func mappend(m: Self) -> Self
+}
 
-  func mempty<M: Monoid where M.Element == Element>() -> M
-  func mappend<M: Monoid where M.Element == Element>(m: M) -> M
+infix operator <> { associativity left precedence 90 }
+
+public func <> <M: Monoid>(a: M, b: M) -> M {
+  return a.mappend(b)
 }
