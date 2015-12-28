@@ -11,6 +11,7 @@
 		791D52441C29803800E36820 /* ArrayApplicativeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791D52431C29803800E36820 /* ArrayApplicativeSpec.swift */; };
 		792AF4501C292B1000BFA9DF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792AF44F1C292B1000BFA9DF /* Common.swift */; };
 		796307281C2D09B00078DC03 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796307271C2D09B00078DC03 /* Optional.swift */; };
+		796FCAF01C31315700691F94 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796FCAEF1C31315700691F94 /* Monoid.swift */; };
 		79A547781C31295300A84BA7 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A547771C31295300A84BA7 /* Arrow.swift */; };
 		79B6D6641C229CEE00DABBE2 /* Swoof.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B6D6631C229CEE00DABBE2 /* Swoof.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79B6D66B1C229CEE00DABBE2 /* Swoof.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B6D6601C229CEE00DABBE2 /* Swoof.framework */; };
@@ -35,6 +36,7 @@
 		791D52431C29803800E36820 /* ArrayApplicativeSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayApplicativeSpec.swift; sourceTree = "<group>"; };
 		792AF44F1C292B1000BFA9DF /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		796307271C2D09B00078DC03 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		796FCAEF1C31315700691F94 /* Monoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monoid.swift; sourceTree = "<group>"; };
 		79A547771C31295300A84BA7 /* Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
 		79B6D6601C229CEE00DABBE2 /* Swoof.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swoof.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B6D6631C229CEE00DABBE2 /* Swoof.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swoof.h; sourceTree = "<group>"; };
@@ -70,6 +72,14 @@
 			path = Array;
 			sourceTree = "<group>";
 		};
+		796FCAEE1C31314D00691F94 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				796FCAEF1C31315700691F94 /* Monoid.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		79B6D6561C229CEE00DABBE2 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 		79B6D6621C229CEE00DABBE2 /* Swoof */ = {
 			isa = PBXGroup;
 			children = (
+				796FCAEE1C31314D00691F94 /* Protocols */,
 				79BBBB0D1C23295E00B2B2C3 /* Utils */,
 				79B6D68C1C22A68F00DABBE2 /* DataStructures */,
 				79B6D6631C229CEE00DABBE2 /* Swoof.h */,
@@ -291,6 +302,7 @@
 				79B6D68E1C22A6B000DABBE2 /* Array.swift in Sources */,
 				792AF4501C292B1000BFA9DF /* Common.swift in Sources */,
 				79BBBB0F1C23296A00B2B2C3 /* Curry.swift in Sources */,
+				796FCAF01C31315700691F94 /* Monoid.swift in Sources */,
 				79A547781C31295300A84BA7 /* Arrow.swift in Sources */,
 				796307281C2D09B00078DC03 /* Optional.swift in Sources */,
 			);
