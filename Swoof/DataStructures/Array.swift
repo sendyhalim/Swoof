@@ -30,7 +30,7 @@ public func pure <A>(value: A) -> [A] {
   return [value]
 }
 
-/// Bind operator
+///  Bind Operator
 infix operator >>= { associativity left precedence 90 }
 
 public func >>= <A, B>(value: [A], f: A -> [B]) -> [B] {
