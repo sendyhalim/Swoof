@@ -19,7 +19,7 @@ class ArrayApplicativeSpec: QuickSpec {
         it("should satisfy `pure id <*> v = v`") {
           let value = [1, 2]
           let result: [Int] = pure(id) <*> value
-          expect(result).to(equal(value))
+          expect(result) == value
         }
       }
 
@@ -27,9 +27,8 @@ class ArrayApplicativeSpec: QuickSpec {
         it("should satisfy `pure f <*> pure x = pure (f x)`") {
           let f = curry(+)(20)
           let x = 80
-          let expected: [Int] = pure(f(x))
 
-          expect(pure(f) <*> pure(x)).to(equal(expected))
+          expect(pure(f) <*> pure(x)) == pure(f(x))
         }
       }
 

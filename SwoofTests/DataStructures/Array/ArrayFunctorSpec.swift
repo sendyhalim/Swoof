@@ -18,7 +18,7 @@ class ArrayFunctorSpec: QuickSpec {
         let idValue = id(value)
         let result: [Int] = id <^> value
 
-        expect(result).to(equal(idValue))
+        expect(result) == idValue
       }
 
       it("should satisfy functor law `fmap (p . q) = (fmap p) . (fmap q)`") {
@@ -26,9 +26,8 @@ class ArrayFunctorSpec: QuickSpec {
         let plusThree = curry(+)(3)
         let minusTen = curry(-)(10)
         let expectedFn: [Int] -> [Int] = (<^>(plusThree)) • (<^>(minusTen))
-        let expected = expectedFn(value)
 
-        expect(plusThree • minusTen <^> value).to(equal(expected))
+        expect(plusThree • minusTen <^> value) == expectedFn(value)
       }
     }
 
@@ -37,15 +36,14 @@ class ArrayFunctorSpec: QuickSpec {
         let xs = [1, 3, 5]
         let addTwo = curry(+)(2)
 
-        expect(addTwo <^> xs).to(equal([3, 5, 7]))
+        expect(addTwo <^> xs) == [3, 5, 7]
       }
 
       it("should do non-deterministic calculation") {
         let xs = [8, 20]
         let fs = [curry(+)(2), curry(/)(40)]
-        let expected = [10, 22, 5, 2]
 
-        expect(fs <*> xs).to(equal(expected))
+        expect(fs <*> xs) == [10, 22, 5, 2]
       }
     }
   }
